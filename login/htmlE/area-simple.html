@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="./echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width:1150px;height:630px;margin: 0"></div>
+    <script type="text/javascript">
+var dom = document.getElementById("main");
+var myChart = echarts.init(dom);
+var app = {};
+
+var option;
+
+
+
+        let base = 0;
+let oneDay = 0.01;
+let date = [];
+let data = [Math.random() * 30];
+for (let i = 1; i < 3000; i++) {
+    let now1 = (base += oneDay);
+    now = now1.toFixed(1);
+    date.push(now);
+  data.push(Math.round((Math.random() - 0.5) * 1.1+ data[i - 1]));
+}
+option = {
+  tooltip: {
+    trigger: 'axis',
+    position: function (pt) {
+      return [pt[0], '10%'];
+    }
+  },
+    title: {
+
+        left: 'center',
+        top:'top',
+      text: "等速肌力测试结果",
+      subtext: "屈伸运动",
+ textStyle: {
+      	fontSize: 32,
+ 	height: 0
+      },
+      subtextStyle: {
+          fontSize: 28
+      }
+
+  },
+  toolbox: {
+    feature: {
+ 
+      restore: {
+	show:false
+	},
+      saveAsImage: {
+	show:false
+	}
+    }
+  },
+    legend: {
+        x: 'right',
+				data: [
+				{
+                        name: '运动速度5°/s',
+					textStyle: 
+					{
+        						fontSize: 20
+  				               }
+				 }
+				]
+				
+				},
+  xAxis: {
+    type: 'category',
+	name: "运动角度°",
+ 	nameTextStyle: {
+      	fontSize: 22
+    	},
+	axisLabel: {
+	fontSize: 20,
+	fontWeight: "bold",
+	},
+    boundaryGap: false,
+    data: date
+  },
+  yAxis: {
+    type: 'value',
+	name: "阻力值( N )",
+ 	nameTextStyle: {
+      	fontSize: 22
+    	},
+	axisLabel: {
+	fontSize: 20,
+	fontWeight: "bold",
+	},
+    boundaryGap: false
+  },
+
+  series: [
+    {
+      name: '运动速度5°/s',
+      type: 'line',
+      symbol: 'none',
+      sampling: 'lttb',
+      itemStyle: {
+        color: 'rgb(255, 70, 131)'
+      },
+      areaStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+         {		
+            offset: 0,
+            color: 'rgb(255, 158, 68)'
+          },
+          {
+            offset: 1,
+            color: 'rgb(255, 70, 131)'
+          }
+        ])
+      },
+      data: data
+    }
+  ]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+        </script>
+    </body>
+</html>
+    

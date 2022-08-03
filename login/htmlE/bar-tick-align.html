@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="./echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width:1150px;height:630px;margin: 10"></div>
+    <script type="text/javascript">
+        var dom = document.getElementById("main");
+        var myChart = echarts.init(dom);
+        var app = {};
+
+        var option;
+
+
+
+        option = {
+            title: {
+                text: "测试任务完成平均用时",
+                x: "center",
+                textStyle: {
+                    fontSize: 35,
+                    height: 0
+                },
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            grid: {
+                left: '35',
+                right: '100',
+                bottom: '30',
+                containLabel: true
+            },
+            
+            xAxis: [
+                {
+                    name: "任务项目",
+                    
+                    nameTextStyle: {
+                        fontSize: 22
+                    },
+                    
+                    type: 'category',
+                    data: ['任务1', '任务2', '任务3', '任务4', '任务5'],
+                    axisTick: {
+                        alignWithLabel: true
+                    },
+                    axisLabel: {
+                        fontSize: 20,
+                        fontWeight: "bold",
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    name: "完成时间s",
+
+                    nameTextStyle: {
+                        fontSize: 22
+                    },
+                    type: 'value',
+                    axisLabel: {
+                        fontSize: 20,
+                        fontWeight: "bold",
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: 'Direct',
+                    type: 'bar',
+                    barWidth: '40%',
+                    data: [10.4, 3.6, 31.8, 18.6, 13.8],
+                    label: {
+                        show: true,
+                        fontSize: 20,
+                        position: 'inside'
+                    },
+                }
+            ]
+        };
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+
+    </script>
+</body>
+</html>

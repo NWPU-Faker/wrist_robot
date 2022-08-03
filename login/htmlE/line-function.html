@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="./echarts.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 800px;height:700px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+		var option = {
+			title: {
+				text: "耦合运动的活动范围外廓线",
+				
+				right: "270px",
+				 textStyle: {
+      					fontSize: 35,
+ 					height: 0
+   				 },
+			},
+			grid: {
+    				top: "100px",
+				right:"230px"
+ 			        },
+			tooltip: {
+				
+				trigger: "axis",
+				formatter: '{a} <br/> '+'(屈伸, 尺桡偏)：'+'( ' +'{c}'+' )',
+				textStyle: {
+     					 fontSize: 18
+   					 }
+			},
+			legend: {
+				x: 'right',
+				data: [
+				{
+				                name: '此次测试',
+					textStyle: 
+					{
+        						fontSize: 20
+  				               }
+				 },
+				{
+				                name: '前一次测试',
+					textStyle: 
+					{
+        						fontSize: 20
+  				               }
+				 }
+]
+				
+			},
+			xAxis: [
+				{
+					type: "value",
+					
+					name: "屈伸方向( ° )",
+ 					nameTextStyle: {
+      							fontSize: 22
+    						        },
+					axisLabel: {
+     						 fontSize: 20,
+						fontWeight: "bold",
+    						}
+				}
+			],
+			yAxis: [
+				{
+					type: "value",
+					name: "尺桡偏方向( ° )",
+					nameTextStyle: {
+      							fontSize: 22
+    						        },
+					axisLabel: {
+     						 fontSize: 20,
+						fontWeight: "bold",
+    						}
+				}
+			],
+			toolbox: {
+				show: true,
+				feature: {
+				mark: {
+					show: false
+				},
+				dataView: {
+					show: false,
+					readOnly: false
+				},
+				restore: {
+					show: false
+				},
+				saveAsImage: {
+					show: false
+				}
+			}
+			},
+			calculable: true,
+			series: [
+				{
+					name: "此次测试",
+					 type: "line",
+					smooth:true,
+					data: [[-5,77],[0,80], [5,75],[10,67],[17,71],[25,65],[35,55],[40,50],[50,44],[88,0],[0,-86],[-77,0],[-5,77]],
+					label: {
+      						show: false,
+						fontSize:15,
+						fontWeight: "bold",
+    					         },
+					lineStyle: {
+      						width: 6
+   						 }
+ 
+				},
+				{
+					name: "前一次测试",
+					type: "line",
+					data: [[10,10], [15,15]],
+					label: {
+      						show: false,
+						fontSize:15,
+						fontWeight: "bold",
+    					         },
+					lineStyle: {
+      						width: 6
+   						 }
+ 
+				}
+			]
+			};
+ 
+			myChart.setOption(option);
+			
+    </script>
+</body>
+</html>

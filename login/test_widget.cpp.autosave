@@ -1,0 +1,61 @@
+#include"test_widget.h"
+#include"icon_help.h"
+#include<QPainter>
+test_widget::test_widget(QWidget *parent) :
+    QWidget(parent)
+{
+
+    this->initForm();
+
+
+}
+
+test_widget::~test_widget()
+{
+    delete ui;
+}
+
+
+void test_widget::initForm()
+{
+    quint32 size = 15;
+    quint32 pixWidth = 15;
+    quint32 pixHeight = 15;
+    
+    //从图形字体获得图片,也可以从资源文件或者路径文件获取
+    int icon = 0xf061;
+    QPixmap iconNormal = IconHelper::getPixmap(QColor(100, 100, 100).name(), icon, size, pixWidth, pixHeight);
+    QPixmap iconHover = IconHelper::getPixmap(QColor(255, 255, 255).name(), icon, size, pixWidth, pixHeight);
+    QPixmap iconCheck = IconHelper::getPixmap(QColor(255, 255, 255).name(), icon, size, pixWidth, pixHeight);
+
+    btn2 << (this->parent())->ui->pushButton_1<< ui->pushButton_2 << ui->pushButton_3 << ui->pushButton_4<< ui->pushButton_5;
+    for (int i = 0; i < btn2.count(); i++) {
+        NavButton *btn = btns1.at(i);
+        btn->setPaddingLeft(32);
+        btn->setLineSpace(6);
+
+        btn->setShowIcon(true);
+        btn->setIconSpace(15);
+        btn->setIconSize(QSize(10, 10));
+        btn->setIconNormal(iconNormal);
+        btn->setIconHover(iconHover);
+        btn->setIconCheck(iconCheck);
+
+        connect(btn, SIGNAL(clicked(bool)), this, SLOT(buttonClick3()));
+    }
+}
+
+
+
+void test_widget::buttonClick3()
+{
+
+    New_Button *b = (New_Button *)sender();
+    //qDebug() << "当前按下" << b->text();
+    for (int i = 0; i < btn1.count(); i++) {
+        New_Button *btn = btn1.at(i);
+        btn->setChecked(b == btn);
+
+
+    }
+}

@@ -1,0 +1,12 @@
+INPUT(
+./temp\obj\main.o
+./temp\obj\frmlunarcalendarwidget.o
+./temp\obj\lunarcalendaritem.o
+./temp\obj\lunarcalendarinfo.o
+./temp\obj\lunarcalendarwidget.o
+./temp\obj\qrc_main.o
+./temp\obj\moc_frmlunarcalendarwidget.o
+./temp\obj\moc_lunarcalendaritem.o
+./temp\obj\moc_lunarcalendarinfo.o
+./temp\obj\moc_lunarcalendarwidget.o
+);

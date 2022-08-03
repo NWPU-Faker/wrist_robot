@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="./echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width:1150px;height:630px;margin: 10"></div>
+    <script type="text/javascript">
+        var dom = document.getElementById("main");
+        var myChart = echarts.init(dom);
+        var app = {};
+
+        var option;
+
+
+
+        option = {
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            title: {
+
+                left: 'center',
+                top: 'top',
+                text: "活动能力对比评估结果",
+                
+                textStyle: {
+                    fontSize: 32,
+                    height: 0
+                }
+                
+
+            },
+            legend: {
+                x:'right',
+                data: ['差异值', '健侧', '患侧'],
+                data: [
+                    {
+                        name: '差异值',
+                        textStyle:
+                        {
+                            fontSize: 18
+                        }
+                    },
+                    {
+                        name: '健侧',
+                        textStyle:
+                        {
+                            fontSize: 18
+                        }
+                    },
+                    {
+                        name: '患侧',
+                        textStyle:
+                        {
+                            fontSize: 18
+                        }
+                    }
+                ],
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: [
+                {
+                    type: 'value',
+                   
+                    axisLabel: {
+                        fontSize: 20,
+                        fontWeight: "bold",
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'category',
+                    axisTick: {
+                        show: false
+                    },
+                    axisLabel: {
+                        fontSize: 20,
+                        fontWeight: "bold",
+                    },
+                    data: ['平均速度', '最大速度', '到达最大速度所用时间', '加速度均方根']
+                }
+            ],
+            series: [
+                {
+                    name: '患侧',
+                    type: 'bar',
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        fontSize: 20
+                    },
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: [4, 11, 3.7,1.2]
+                },
+                {
+                    name: '健侧',
+                    type: 'bar',
+                    stack: 'Total',
+                    label: {
+                        show: true,
+                        fontSize: 20
+                    },
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: [11, 24, 2.4, 9.4]
+                },
+                {
+                    name: '差异值',
+                    type: 'bar',
+                    stack: 'Total',
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        fontSize: 20
+                    },
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: [-7, -13, 1.3, -8.2]
+                }
+            ]
+        };
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+
+    </script>
+</body>
+</html>

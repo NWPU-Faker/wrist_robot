@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="./echarts.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 1200px;height:600px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+		var option = {
+			title: {
+				text: "活动范围测试结果",
+				x: "center",
+				 textStyle: {
+      					fontSize: 35,
+ 					height: 0
+   				 },
+			},
+			tooltip: {
+				
+				trigger: "axis",
+				
+			},
+			legend: {
+				x: 'right',
+				data: [
+				{
+				                name: '正极限值',
+					textStyle: 
+					{
+        						fontSize: 20
+  				               }
+				 },
+				{
+				                name: '负极限值',
+					textStyle: 
+					{
+        						fontSize: 20
+  				               }
+				 }
+]
+				
+			},
+			xAxis: [
+				{
+					type: "category",
+					name: "最近九次测试结果",
+					splitLine: {show: false},
+					data: ["第一次", "第二次", "第三次", "第四次", "第五次", "第六次", "第七次", "第八次", "本次测试"],
+					nameLocation: "middle",
+ 					nameTextStyle: {
+      							fontSize: 22
+    						        },
+					nameGap: 40,
+					axisLabel: {
+     						 fontSize: 20,
+						fontWeight: "bold",
+    						}
+				}
+			],
+			yAxis: [
+				{
+					type: "value",
+					name: "角度值",
+					nameTextStyle: {
+      							fontSize: 22
+    						        },
+					axisLabel: {
+     						 fontSize: 20,
+						fontWeight: "bold",
+    						}
+				}
+			],
+			toolbox: {
+				show: true,
+				feature: {
+				mark: {
+					show: false
+				},
+				dataView: {
+					show: false,
+					readOnly: false
+				},
+				restore: {
+					show: false
+				},
+				saveAsImage: {
+					show: false
+				}
+			}
+			},
+			calculable: true,
+			series: [
+				{
+					name: "正极限值",
+					 type: "line",
+					data: [10, 13, 9, 17, 24, 24, 47, 22, 56],
+					label: {
+      						show: false,
+						fontSize:15,
+						fontWeight: "bold",
+    					         }
+ 
+				},
+				{
+					name: "负极限值",
+					type: "line",
+					data: [10, 12, 41, 18, 16, 32, 64, 28, 16],
+					label: {
+      						show: false,
+						fontSize:15,
+						fontWeight: "bold",
+    					         }
+ 
+				}
+			]
+			};
+ 
+			myChart.setOption(option);
+			
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="./echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width:1150px;height:630px;margin: 0"></div>
+    <script type="text/javascript">
+        var dom = document.getElementById("main");
+var myChart = echarts.init(dom);
+var app = {};
+
+var option;
+
+
+
+        const colors = ['#5470C6', '#91CC75', '#EE6666'];
+        option = {
+            color: colors,
+            title: {
+                text: "等长肌力测试结果               ",
+                subtext: "屈伸运动                      ",
+                subtextStyle: {
+                    fontSize: 24
+                },
+                x: "center",
+                textStyle: {
+                    fontSize: 35,
+                    height: 0
+                },
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross'
+                }
+            },
+            grid: {
+                right: '20%'
+            },
+            toolbox: {
+                feature: {
+                    dataView: { show: false, readOnly: false },
+                    restore: { show: false },
+                    saveAsImage: { show: false }
+                }
+            },
+            legend: {
+                x: 'right',
+                data: ['Evaporation', 'Precipitation', 'Temperature'],
+                data: [
+                    {
+                        name: '本次测量',
+                        textStyle:
+                        {
+                            fontSize: 18
+                        }
+                    },
+                    {
+                        name: '历史最大值',
+                        textStyle:
+                        {
+                            fontSize: 18
+                        }
+                    },
+                    {
+                        name: '变幅',
+                        textStyle:
+                        {
+                            fontSize: 18
+                        }
+                    }
+                ],
+                right: 200
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    name: "测试角度",
+                    nameLocation: "middle",
+                    nameTextStyle: {
+                        fontSize: 22
+                    },
+                    nameGap: 35,
+                    axisTick: {
+                        alignWithLabel: true
+                    },
+                    // prettier-ignore
+                    data: ['-40°', '-30°', '-20°', '-10°', '0°', '10°', '20°', '30°', '40°'],
+                    axisLabel: {
+                        fontSize: 20,
+                        fontWeight: "bold",
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '末端肌力值(N)',
+                    nameTextStyle: {
+                        fontSize: 20
+                    },
+                    min: 0,
+                    max: 40,
+                    position: 'right',
+                    axisLine: {
+                        show: true,
+                        lineStyle: {
+                            color: colors[0]
+                        }
+                    },
+                    axisLabel: {
+                        formatter: '{value} N',
+                        fontSize: 20,
+                        fontWeight: "bold",
+                    }
+                },
+                {
+                    type: 'value',
+                    name: '变化比率(%)',
+                    nameTextStyle: {
+                        fontSize: 20
+                    },
+                    min: -200,
+                    max: 200,
+                    position: 'left',
+                    axisLine: {
+                        show: true,
+                        lineStyle: {
+                            color: colors[2]
+                        }
+                    },
+                    axisLabel: {
+                        formatter: '{value} %',
+                        fontSize: 20,
+                        fontWeight: "bold",
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '本次测量',
+                    type: 'bar',
+                    data: [
+                        5.5, 6.9, 9.0, 15.2, 25.6, 18.7, 7.6, 4.2, 4.6
+                    ]
+                },
+                {
+                    name: '历史最大值',
+                    type: 'bar',
+                    data: [
+                        4.6, 7.9, 11.0, 18.4, 28.7, 19.7, 7.6, 4.9, 3.7
+                    ]
+                },
+                {
+                    name: '变幅',
+                    type: 'line',
+                    yAxisIndex: 1,
+                    data: [19.5, -12.6, -18.2, -17.3,-10.8, -5, 0, -14.2, 29.7]
+                }
+            ]
+        };
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+
+    </script>
+</body>
+</html>
