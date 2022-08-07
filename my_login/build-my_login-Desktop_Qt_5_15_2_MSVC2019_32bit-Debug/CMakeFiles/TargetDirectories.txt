@@ -1,0 +1,8 @@
+D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug/CMakeFiles/my_login.dir
+D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug/CMakeFiles/install/local.dir
+D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug/CMakeFiles/install.dir
+D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug/CMakeFiles/edit_cache.dir
+D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug/CMakeFiles/list_install_components.dir
+D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug/CMakeFiles/my_login_autogen_timestamp_deps.dir
+D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug/CMakeFiles/my_login_autogen.dir

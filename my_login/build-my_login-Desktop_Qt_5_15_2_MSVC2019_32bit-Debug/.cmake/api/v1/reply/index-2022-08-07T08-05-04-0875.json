@@ -8,34 +8,34 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/bin/cmake.exe",
-			"cpack" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/bin/cpack.exe",
-			"ctest" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/bin/ctest.exe",
-			"root" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/share/cmake-3.23"
+			"cmake" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
+			"cpack" : "C:/Qt/Tools/CMake_64/bin/cpack.exe",
+			"ctest" : "C:/Qt/Tools/CMake_64/bin/ctest.exe",
+			"root" : "C:/Qt/Tools/CMake_64/share/cmake-3.21"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 23,
-			"patch" : 2,
-			"string" : "3.23.2",
+			"minor" : 21,
+			"patch" : 1,
+			"string" : "3.21.1",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-9ed1d303ee8c6ca80326.json",
+			"jsonFile" : "codemodel-v2-6f277c35d90ddc329d2a.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 4
+				"minor" : 3
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-35ea15efcb27a9b1b635.json",
+			"jsonFile" : "cache-v2-a6a51c07d8ea9b560687.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-6509e00e90d9c2c5218d.json",
+			"jsonFile" : "cmakeFiles-v1-4b34e7b537b51bb23a33.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -57,7 +57,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-35ea15efcb27a9b1b635.json",
+			"jsonFile" : "cache-v2-a6a51c07d8ea9b560687.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -67,7 +67,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-6509e00e90d9c2c5218d.json",
+			"jsonFile" : "cmakeFiles-v1-4b34e7b537b51bb23a33.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -77,12 +77,12 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-9ed1d303ee8c6ca80326.json",
+			"jsonFile" : "codemodel-v2-6f277c35d90ddc329d2a.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 4
+				"minor" : 3
 			}
 		}
 	}

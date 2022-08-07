@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/Hostx64/x64/lib.exe"
+			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/lib.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -39,7 +39,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug"
+			"value" : "d:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -63,7 +63,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "23"
+			"value" : "21"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -75,7 +75,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -87,7 +87,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/bin/cmake.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -99,7 +99,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/bin/cpack.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -111,7 +111,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/bin/ctest.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe"
+			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x86/cl.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+			"value" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
@@ -160,18 +160,6 @@
 			],
 			"type" : "STRING",
 			"value" : "/MDd /Zi /Ob0 /Od /RTC1"
-		},
-		{
-			"name" : "CMAKE_CXX_FLAGS_INIT",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
-				}
-			],
-			"type" : "STRING",
-			"value" : "-DQT_QML_DEBUG"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_MINSIZEREL",
@@ -247,19 +235,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe"
-		},
-		{
-			"name" : "CMAKE_EDIT_COMMAND",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to cache edit program executable."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/bin/cmake-gui.exe"
+			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x86/cl.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -287,7 +263,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/machine:x64"
+			"value" : "/machine:X86"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_DEBUG",
@@ -427,7 +403,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/my_login"
+			"value" : "D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/my_login"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -455,7 +431,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/Hostx64/x64/link.exe"
+			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/link.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -471,7 +447,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~2/MIB055~1/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe"
+			"value" : "C:/PROGRA~2/MICROS~4/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -487,7 +463,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/machine:x64"
+			"value" : "/machine:X86"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_DEBUG",
@@ -567,7 +543,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files (x86)/Windows Kits/10/bin/10.0.17763.0/x64/mt.exe"
+			"value" : "C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x64/mt.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -603,7 +579,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/5.15.2/msvc2015_64"
+			"value" : "C:/Qt/5.15.2/msvc2019"
 		},
 		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
@@ -639,7 +615,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake"
+			"value" : "C:/Qt/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -739,7 +715,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files (x86)/Windows Kits/10/bin/10.0.17763.0/x64/rc.exe"
+			"value" : "C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x64/rc.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -843,7 +819,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/Tools/CMake_64/share/cmake-3.23"
+			"value" : "C:/Qt/Tools/CMake_64/share/cmake-3.21"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -859,7 +835,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/machine:x64"
+			"value" : "/machine:X86"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS_DEBUG",
@@ -971,7 +947,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/machine:x64"
+			"value" : "/machine:X86"
 		},
 		{
 			"name" : "CMAKE_STATIC_LINKER_FLAGS_DEBUG",
@@ -1075,7 +1051,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/5.15.2/msvc2015_64/lib/cmake/Qt5"
+			"value" : "C:/Qt/5.15.2/msvc2019/lib/cmake/Qt5"
 		},
 		{
 			"name" : "QT_QMAKE_EXECUTABLE",
@@ -1087,7 +1063,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/5.15.2/msvc2015_64/bin/qmake.exe"
+			"value" : "C:/Qt/5.15.2/msvc2019/bin/qmake.exe"
 		},
 		{
 			"name" : "Qt5Core_DIR",
@@ -1099,7 +1075,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/5.15.2/msvc2015_64/lib/cmake/Qt5Core"
+			"value" : "C:/Qt/5.15.2/msvc2019/lib/cmake/Qt5Core"
 		},
 		{
 			"name" : "Qt5Gui_DIR",
@@ -1111,7 +1087,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/5.15.2/msvc2015_64/lib/cmake/Qt5Gui"
+			"value" : "C:/Qt/5.15.2/msvc2019/lib/cmake/Qt5Gui"
 		},
 		{
 			"name" : "Qt5Widgets_DIR",
@@ -1123,7 +1099,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/5.15.2/msvc2015_64/lib/cmake/Qt5Widgets"
+			"value" : "C:/Qt/5.15.2/msvc2019/lib/cmake/Qt5Widgets"
 		},
 		{
 			"name" : "Qt5_DIR",
@@ -1135,7 +1111,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/LZJ/mySoftware/myQt/Qt/5.15.2/msvc2015_64/lib/cmake/Qt5"
+			"value" : "C:/Qt/5.15.2/msvc2019/lib/cmake/Qt5"
 		},
 		{
 			"name" : "my_login_BINARY_DIR",
@@ -1147,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug"
+			"value" : "D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2019_32bit-Debug"
 		},
 		{
 			"name" : "my_login_IS_TOP_LEVEL",
@@ -1171,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/my_login"
+			"value" : "D:/wristRobot/myGitRepository/wrist_robot/wrist_robot/my_login/my_login"
 		}
 	],
 	"kind" : "cache",

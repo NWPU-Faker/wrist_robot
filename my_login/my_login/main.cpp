@@ -19,5 +19,7 @@ int main(int argc, char *argv[])
     qDebug() << zero_array[80] +  17 ;
     */
 
+
+
     return a.exec();
 }
