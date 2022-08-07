@@ -1,0 +1,8 @@
+D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug/CMakeFiles/my_login.dir
+D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug/CMakeFiles/edit_cache.dir
+D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug/CMakeFiles/list_install_components.dir
+D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug/CMakeFiles/install.dir
+D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug/CMakeFiles/install/local.dir
+D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug/CMakeFiles/my_login_autogen_timestamp_deps.dir
+D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug/CMakeFiles/my_login_autogen.dir

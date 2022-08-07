@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-dd4f072d399aa0b471d4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "my_login",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "my_login::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_login-Debug-55e3947318b57c4709c2.json",
+					"name" : "my_login",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_login_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_login_autogen-Debug-5cbe6b78519df971252a.json",
+					"name" : "my_login_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_login_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_login_autogen_timestamp_deps-Debug-7d00f06f53ed89564935.json",
+					"name" : "my_login_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/build-my_login-Desktop_Qt_5_15_2_MSVC2015_64bit-Debug",
+		"source" : "D:/LZJ/my_github_desktop/my_repository/wrist_robot/my_login/my_login"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
