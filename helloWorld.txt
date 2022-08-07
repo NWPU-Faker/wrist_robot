@@ -1,6 +1,5 @@
 helloWorld22222ssss
 Now I am changing this file once again.
-<<<<<<< HEAD
 333333
 444444
 
@@ -10,7 +9,3 @@ Now I am changing this file once again.
 5
 6
 7
-=======
-333333
->>>>>>> parent of 01d5547 (Update helloWorld.txt)
-2022-08-07T10:17
